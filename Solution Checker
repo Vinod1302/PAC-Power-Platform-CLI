@@ -17,3 +17,6 @@ It can identify issues related to areas such as:
     SDK message configurations
     Power Automate flows through Flow Checker
     Power Fx through App Checker
+
+
+So we can do this to unmanaged solution in dev need to download zip and give that path then it will analyze and give the issues.
