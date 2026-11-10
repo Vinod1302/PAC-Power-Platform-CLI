@@ -1,0 +1,19 @@
+We can use PAC CLI to check a Power Platform solution for potential issues and best-practice violations.
+ex:
+    pac solution check --path "C:\Solutions\BudgetApproval.zip"
+
+pac solution check sends the Dataverse solution project to the Power Apps Checker service, which analyzes solution components 
+against Microsoft best-practice rules. Microsoft Power Platform CLI solution command group
+
+It can identify issues related to areas such as:
+    
+    Performance
+    Security
+    Maintainability
+    Reliability
+    Unsupported/problematic patterns
+    Problems in JavaScript/web resources
+    Custom workflow activities
+    SDK message configurations
+    Power Automate flows through Flow Checker
+    Power Fx through App Checker
