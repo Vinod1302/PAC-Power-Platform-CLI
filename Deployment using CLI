@@ -1,0 +1,26 @@
+# Connect to DEV
+pac auth create --environment "https://contoso-dev.crm.dynamics.com"
+
+# Check solutions
+pac solution list
+
+mkdir C:\PowerPlatformSolutions
+cd C:\PowerPlatformSolutions
+
+# Export from DEV
+pac solution export --name BudgetApproval --path "C:\PowerPlatformSolutions\BudgetApproval.zip"
+
+# Connect to TEST
+pac auth create --environment "https://contoso-test.crm.dynamics.com"
+
+# Check authentication profiles
+pac auth list
+
+# Select TEST if needed
+pac auth select --index 2
+
+# Confirm environment
+pac org who
+
+# Import into TEST
+pac solution import --path "C:\PowerPlatformSolutions\BudgetApproval.zip"
