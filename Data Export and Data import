@@ -20,3 +20,5 @@ How to create the schema
     Add related tables/relationships if required.
     Validate the schema.
     Save the schema.
+ex:
+        pac data export --schemaFile "C:\Data\ApprovalSchema.xml" --dataFile "C:\Data\ApprovalData.zip"
