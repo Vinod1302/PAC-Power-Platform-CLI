@@ -1,0 +1,15 @@
+A Power Platform solution is normally exported as a .zip. Git/source control works better with individual files, 
+so PAC CLI can unpack the ZIP into folders/files that Git can track.
+
+First export your solution:
+    pac solution export --name BudgetApproval --path "BudgetApproval.zip"
+Then unpack it:
+    pac solution unpack --zipfile "BudgetApproval.zip" --folder "BudgetApproval"
+
+you'll have a folder containing the solution's individual files/components.
+You can then:
+  Add those files to Git/Azure DevOps
+  Track who changed what
+  Compare versions
+  Maintain development history
+  Later pack those files back into a solution ZIP: and import the solution.
