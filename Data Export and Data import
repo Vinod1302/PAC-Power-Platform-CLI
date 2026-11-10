@@ -1,3 +1,4 @@
+Export:
 To export configuration data, you need two main things:
 
     1)Schema XML containing which tables/columns you want.
@@ -22,3 +23,8 @@ How to create the schema
     Save the schema.
 ex:
         pac data export --schemaFile "C:\Data\ApprovalSchema.xml" --dataFile "C:\Data\ApprovalData.zip"
+
+Import:
+ex:
+        pac data import --data "C:\Data\ApprovalData.zip"
+During import we just need to connect to that environment and need to run the command Schema will be taken care this time.
