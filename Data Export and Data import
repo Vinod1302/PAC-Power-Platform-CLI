@@ -1,0 +1,22 @@
+To export configuration data, you need two main things:
+
+    1)Schema XML containing which tables/columns you want.
+    2)An output location where PAC should create the exported ZIP.
+
+The schema XML is the part you create first, usually with the Configuration Migration Tool.
+
+How to create the schema
+    Open Configuration Migration Tool.
+    Choose Create schema.
+    Sign in to your Dataverse environment.
+    Select your solution, for example: Budget Approval
+    Select the table you want, for example: Approval Configuration
+    Select the required columns, for example:
+        Name
+        Approval Level
+        Minimum Amount
+        Maximum Amount
+        Approver
+    Add related tables/relationships if required.
+    Validate the schema.
+    Save the schema.
