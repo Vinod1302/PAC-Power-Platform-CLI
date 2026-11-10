@@ -1,0 +1,29 @@
+""""".\DeploySolution.ps1""""" To run the script
+
+There are two ways that we can use PAC 
+1)Manual
+2)Automate
+
+1)Manual:
+we need to run commands one by one and execute the process.
+
+2)Automate:
+We can run everything in a file. We can execute the file at once.
+ex:
+.\DeploySolution.ps1
+
+File ex: 
+        Write-Host "Starting deployment..."
+          
+          pac auth select --name DEV
+          
+          pac solution export `
+              --name BudgetApproval `
+              --path "C:\PowerPlatformSolutions\BudgetApproval.zip"
+          
+          pac auth select --name TEST
+          
+          pac solution import `
+              --path "C:\PowerPlatformSolutions\BudgetApproval.zip"
+    
+    Write-Host "Deployment completed."
