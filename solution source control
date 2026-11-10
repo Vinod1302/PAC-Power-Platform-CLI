@@ -13,3 +13,14 @@ You can then:
   Compare versions
   Maintain development history
   Later pack those files back into a solution ZIP: and import the solution.
+
+
+Git can show you:
+
+        Which form files changed
+        Lines/configuration that were added
+        Lines/configuration that were removed
+        Previous vs current version
+        Who committed the change
+        When it was committed
+        Which branch/commit introduced it
